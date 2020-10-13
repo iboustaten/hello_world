@@ -1,0 +1,9 @@
+{% load static %}
+<h1>Articles</h1>
+<ul>
+    {% for article in articles %}
+        <li><a href="{{ article.PDF.url }}">{{ article.PDF}}</li></a>
+        <p></p>
+        <li>{{ article.title }}</li>
+    {% endfor %}
+</ul>
